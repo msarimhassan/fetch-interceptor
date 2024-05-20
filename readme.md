@@ -11,7 +11,7 @@
 ## Install
 
 ```bash
-$ npm install --save fetch-interceptor
+$ npm install --save react-fetch-interceptor
 ```
 
 ## Usage
