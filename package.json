@@ -1,6 +1,6 @@
 {
   "name": "react-fetch-interceptor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Wrapper on fetch to modify the request ",
   "main": "index.js",
   "type": "module",
@@ -8,5 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sarim Hassan",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": ["react","intercept","interceptor","fetch","axios","api","apisauce","Nextjs"]
 }
