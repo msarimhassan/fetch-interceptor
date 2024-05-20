@@ -1,5 +1,5 @@
 {
-  "name": "fetch-interceptor",
+  "name": "react-fetch-interceptor",
   "version": "1.0.0",
   "description": "Wrapper on fetch to modify the request ",
   "main": "index.js",
