@@ -15,6 +15,41 @@ $ npm install --save react-fetch-interceptor
 ```
 
 ## Usage
+```
+import {useEffect} from 'react'
+import { createFetchInterceptor } from 'react-fetch-interceptor';
+
+function App() {
+  
+  useEffect(() => {
+
+	const jwt = localStorage.getItem('jwt')
+    const interceptor = createFetchInterceptor();
+    interceptor.setRequestInterceptor(async (input, init = {}) => {
+      // Ensure init is defined and headers object is initialized
+      init.headers = {
+        ...init.headers, // Preserve any existing headers
+        Authorization:
+          `Bearer ${jwt}`,
+        // If you want to override any header do here...
+      };
+
+      console.log('Intercepted request:', input, init);
+
+      return { input, init };
+    });
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log({ data }));
+  }, []);
+  return <div>React fetch interceptor</div>
+}
+```
 <img src='./public/demo.png'>
 
 
