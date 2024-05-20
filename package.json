@@ -9,5 +9,18 @@
   },
   "author": "Sarim Hassan",
   "license": "ISC",
-  "keywords": ["react","intercept","interceptor","fetch","axios","api","apisauce","Nextjs"]
+  "keywords": [
+    "react",
+    "intercept",
+    "interceptor",
+    "fetch",
+    "axios",
+    "api",
+    "apisauce",
+    "Nextjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msarimhassan/fetch-interceptor"
+  }
 }
